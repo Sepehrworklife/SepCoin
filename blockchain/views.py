@@ -122,7 +122,6 @@ def mine_block(request):
                     'nonce': block['nonce'],
                     'previous_hash': block['previous_hash'],
                     'transactions': block['transactions']}
-        }
         return JsonResponse(response)
 
 #Getting the full Chain
