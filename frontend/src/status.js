@@ -21,6 +21,7 @@ class Status extends Component {
 						.then(res => {
 							const length = res.data.length;
 							const address = res.data.chain[1].transactions[0].receiver;
+							this.setState({ length, address });
 						})
 		}
 
